@@ -1,0 +1,137 @@
+h1 {
+    font-family: 'Verdana', sans-serif;  /* Apply the custom font to h1 */
+    font-weight: bold;
+    color: #333;  /* Color similar to the AMD Ryzen logo */
+    text-align: center;
+    font-size: 78px;
+}
+
+nav {
+  text-align: center;
+}
+nav a {
+  display: inline-block; /* Makes the link behave like a button */
+  padding: 10px 20px; /* Adds space inside the button */
+  font-size: 18px; /* Makes the text larger */
+  color: #b11919; /* Text color */
+  text-decoration: none; /* Removes underline from links */
+  border: 2px solid #333; /* Adds a border around each link */
+  border-radius: 5px; /* Rounds the corners */
+  margin: 0 5px; /* Space between buttons */
+  background-color: #333;
+  transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+nav a:hover {
+  background-color: #333; /* Changes background color on hover */
+  color: #fff; /* Changes text color on hover */
+}
+/* styles.css */
+body {
+  background-color: #f0f0f0; /* Set a background color */
+  background-image: url("https://avatarfiles.alphacoders.com/319/thumb-1920-319927.png"); /* Set a background image */
+  background-size: cover; /* Makes the image cover the entire screen */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Makes the background image fixed while scrolling */
+  font-family: Arial, sans-serif; /* Sets a default font */
+  margin: 0; /* Removes default margin */
+}
+footer a{
+    display: inline-block;        /* Makes the link behave like a button */
+    padding: 10px 20px;           /* Adds space inside the button */
+    font-size: 16px;              /* Adjusts the font size */
+    color: orangered;                  /* Text color */
+    text-decoration: none;        /* Removes underline */
+    border: 2px solid #333;       /* Adds a border around the button */
+    border-radius: 5px;           /* Rounds the corners */
+    background-color: #333;    /* Light background color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+    
+}
+footer a:hover {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+}
+/* Style for the readable info box */
+.info-box {
+    background-color: #333;       /* Dark gray background */
+    color: white;                 /* White text for contrast */
+    padding: 20px;                /* Adds space inside the box */
+    border-radius: 10px;          /* Rounds the corners */
+    font-family: Verdana, sans-serif;  /* Sets a clean, readable font */
+    line-height: 1.6;             /* Increases space between lines */
+    max-width: 800px;             /* Limits the width of the box */
+    margin: 20px auto;            /* Centers the box on the page */
+}
+
+/* Make the header (h2) bold */
+.info-box h2 {
+    font-weight: bold;            /* Thicker font for the header */
+    font-size: 40px;
+}
+
+/* Style for the list items inside the info box */
+.info-box ul {
+    list-style-type: none;        /* Removes bullet points */
+    padding-left: 0;              /* Removes left padding */
+}
+
+/* Style for the list items (li) */
+.info-box li {
+    font-weight: bold;            /* Thicker font for list items */
+    margin-bottom: 10px;          /* Adds space between list items */
+}
+
+/* Optional: Style for the paragraph text */
+.info-box p {
+    font-weight: bold;            /* Thicker font for paragraphs */
+}
+h2 a{
+    display: inline-block;        /* Makes the link behave like a button */
+    padding: 10px 20px;           /* Adds space inside the button */
+    font-size: 35px;              /* Adjusts the font size */
+    color: orangered;                  /* Text color */
+    text-decoration: none;        /* Removes underline */
+    border: 2px solid #333;       /* Adds a border around the button */
+    border-radius: 5px;           /* Rounds the corners */
+    background-color: #333;    /* Light background color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+/* History box container with dark background */
+.history-box {
+    background-color: #333;      /* Dark gray background */
+    color: white;                /* White text for contrast */
+    padding: 20px;               /* Padding inside the box */
+    border-radius: 10px;         /* Rounded corners */
+    border: 3px solid #E63946;   /* Red border for emphasis */
+    max-width: 800px;            /* Maximum width for the box */
+    margin: 20px auto;           /* Center the box */
+    font-family: Arial, sans-serif; /* Readable font */
+}
+
+/* Style for the heading inside the history box */
+.history-heading {
+    font-size: 32px;             /* Larger font size for the heading */
+    font-weight: bold;           /* Bold heading */
+    color: #E63946;              /* Red color for emphasis */
+    text-align: center;          /* Center the heading */
+    margin-bottom: 15px;         /* Space below the heading */
+}
+
+/* Style for the list items inside the history box */
+.history-box ul {
+    list-style-type: none;       /* Remove bullet points */
+    padding-left: 0;             /* Remove padding */
+}
+
+.history-box li {
+    margin: 10px 0;              /* Space between list items */
+    line-height: 1.6;            /* Increase line height for readability */
+    font-size: 18px;             /* Slightly larger text for easy reading */
+}
+
+/* Style for the strong text (bold) in the list items */
+.history-box strong {
+    color: #E63946;              /* Red color for emphasis */
+}
