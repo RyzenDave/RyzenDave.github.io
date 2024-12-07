@@ -1,14 +1,15 @@
 input[type="radio"] {
-    transform: scale(1.8); /* Scales the radio button to 1.5 times its original size */
-    cursor: pointer; /* Optional: Makes the cursor a pointer when hovering over the radio button */
+  transform: scale(
+    1.8
+  ); /* Scales the radio button to 1.5 times its original size */
+  cursor: pointer; /* Optional: Makes the cursor a pointer when hovering over the radio button */
 }
 
 h2 {
-    text-align: center;
-    font-size: 45px;
-    color: #4caf50;
-    line-height: 23px;
-    
+  text-align: center;
+  font-size: 45px;
+  color: #4caf50;
+  line-height: 23px;
 }
 h1 {
   font-size: 70px;

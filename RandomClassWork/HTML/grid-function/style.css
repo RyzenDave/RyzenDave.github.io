@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.grid-parent {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 10fr;
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+}
+.grid-item-header {
+  grid-area: header;
+  background-color: rgb(10, 197, 0);
+}
+
+.grid-item-main {
+  grid-area: main;
+  background-color: #d7c200;
+}
+.grid-item-aside {
+  grid-area: aside;
+  color: white;
+  background-color: #333;
+}
+.grid-item-footer {
+  grid-area: footer;
+}

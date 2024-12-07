@@ -1,0 +1,33 @@
+.some-box {
+  height: 300px;
+  width: 300px;
+  background-color: #ff0000;
+}
+@media screen and (min-width: 200px) and (max-width: 800px) {
+  .some-box {
+    background-color: #333;
+  }
+  body {
+    background-color: #333;
+  }
+}
+nav {
+  width: 100vw;
+  height: 5vh;
+  background-color: aqua;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+main {
+  color: #ffffff;
+}
+@media and (min-width: 1080px) {
+  main {
+    width: 50%;
+    margin: 0px auto;
+  }
+}
+body {
+  background-color: #333;
+}
