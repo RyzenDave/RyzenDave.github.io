@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Horyzen-24";
+    src:
+      local("Horyzen-24"),
+      url("Fonts Exercise/Fonts/Horyzen-24.ttf") format("TrueType"),
+  }
+body {
+    font-family: h;
+}  
+

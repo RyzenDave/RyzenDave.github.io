@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: gray;
+    width: 1000px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+main {
+    position: relative;
+    top: 5vh;
+}
+.position-fixed {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 20px;
+    padding: 5px;
+    color: #ffffff;
+    background-color: black;
+}
+.position-absolute {
+    position: absolute;
+    background-color: blue ; 
+    top: 50px;
+}
+.position-sticky {
+    position: sticky;
+    top: 20px;
+    color: rgb(227, 72, 0);
+}
+a:hover {
+    color: red;
+}
