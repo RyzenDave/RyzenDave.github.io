@@ -34,3 +34,4 @@ function removeFalsyValues(arr) {
 let array = [null, undefined, NaN, "", false, 1, "hello", 42, true, {}];
 let cleanedArray = removeFalsyValues(array);
 console.log(cleanedArray);
+console.log("====== HOMEWORK 8 =======");
