@@ -17,24 +17,24 @@ choice = choice.toLowerCase();
 // Function to handle Dog-->Human conversion
 function handleDogToHuman() {
   let dogAge = prompt("Enter dog's age in dog years:");
-  let humanAge = dogToHuman(dogAge); // Call the dogToHuman function
+  let humanAge = dogToHuman(dogAge); 
   alert("The dog's age in human years is: " + humanAge);
 }
 
 // Function to handle Human-->Dog conversion
 function handleHumanToDog() {
   let humanAge = prompt("Enter human's age in human years:");
-  let dogAge = humanToDog(humanAge); // Call the humanToDog function
+  let dogAge = humanToDog(humanAge); 
   alert("The human's age in dog years is: " + dogAge);
 }
 
 // Call the appropriate function based on user choice
 switch (choice) {
   case "dog":
-    handleDogToHuman(); // Call the function to convert dog years to human years
+    handleDogToHuman(); 
     break;
   case "human":
-    handleHumanToDog(); // Call the function to convert human years to dog years
+    handleHumanToDog(); 
     break;
   default:
     alert("Invalid input! Please type 'dog' or 'human'.");
