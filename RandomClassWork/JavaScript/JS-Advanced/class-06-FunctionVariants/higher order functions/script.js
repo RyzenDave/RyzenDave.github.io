@@ -61,7 +61,7 @@ students.forEach((student) => {
 // Jane Doe (Age: 22)
 // Ana Taylor (Age: 21)
 
-// Students over 20
+// Students over 20 filters
 const over20 = students.filter((student) => student.age > 20);
 console.log(over20);
 // Output: John (23)// Students under 20
