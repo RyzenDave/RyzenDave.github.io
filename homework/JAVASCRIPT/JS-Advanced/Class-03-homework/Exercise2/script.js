@@ -1,4 +1,3 @@
-// Wait until the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
   // Get references to the DOM elements
   const fetchSWDataBtn = document.getElementById("fetchSWDataBtn");
@@ -11,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
       // The URL for the first person in the Star Wars API
       const url = "https://swapi.dev/api/people/1";
 
-      // Make the HTTP GET request using fetch
       const response = await fetch(url);
 
       // Check if the response is OK
@@ -19,13 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      // Parse the JSON data from the response
       const data = await response.json();
 
-      // Update the h1 with the person's name
       personNameH1.textContent = data.name;
 
-      // Clear any existing rows in the table body
       personStatsTableBody.innerHTML = "";
 
       // Create an object mapping the stats we want to display.

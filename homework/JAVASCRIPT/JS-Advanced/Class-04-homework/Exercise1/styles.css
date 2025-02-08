@@ -1,0 +1,43 @@
+/* Basic styling for the page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Styling for the buttons */
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Styling for the table */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+/* Center the pagination buttons */
+#pagination {
+  text-align: center;
+  margin-top: 20px;
+}
