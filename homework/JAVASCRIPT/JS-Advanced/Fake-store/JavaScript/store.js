@@ -4,7 +4,7 @@ class Store {
     this.cart = [];
     this.currentCategory = "all";
     this.currentPage = 1;
-    this.productsPerPage = 8;
+    this.productsPerPage = 9;
     this.searchQuery = "";
     this.priceRange = {
       min: null,
@@ -95,5 +95,4 @@ class Store {
     this.currentPage = page;
   }
 }
-
-export const store = new Store();
+ 

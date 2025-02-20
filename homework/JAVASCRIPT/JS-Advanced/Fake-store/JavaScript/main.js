@@ -2,7 +2,7 @@ const store = {
   products: [],
   cart: [],
   currentPage: 1,
-  itemsPerPage: 8,
+  itemsPerPage: 9,
   category: "all",
   searchQuery: "",
   minPrice: 0,
