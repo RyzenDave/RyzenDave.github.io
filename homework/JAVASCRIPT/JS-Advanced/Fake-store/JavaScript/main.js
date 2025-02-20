@@ -1,3 +1,92 @@
+const store = {
+  products: [],
+  cart: [],
+  currentPage: 1,
+  itemsPerPage: 8,
+  category: "all",
+  searchQuery: "",
+  minPrice: 0,
+  maxPrice: Infinity,
+
+  setProducts(products) {
+    this.products = products;
+  },
+
+  getCurrentPageProducts() {
+    const filteredProducts = this.products
+      .filter((product) => {
+        return (
+          (this.category === "all" || product.category === this.category) &&
+          product.title
+            .toLowerCase()
+            .includes(this.searchQuery.toLowerCase()) &&
+          product.price >= this.minPrice &&
+          product.price <= this.maxPrice
+        );
+      })
+      .sort((a, b) => a.title.localeCompare(b.title));
+
+    const start = (this.currentPage - 1) * this.itemsPerPage;
+    const end = this.currentPage * this.itemsPerPage;
+    return filteredProducts.slice(start, end);
+  },
+
+  getTotalPages() {
+    return Math.ceil(
+      this.products.filter((product) => {
+        return (
+          (this.category === "all" || product.category === this.category) &&
+          product.title
+            .toLowerCase()
+            .includes(this.searchQuery.toLowerCase()) &&
+          product.price >= this.minPrice &&
+          product.price <= this.maxPrice
+        );
+      }).length / this.itemsPerPage
+    );
+  },
+
+  setCategory(category) {
+    this.category = category;
+    this.currentPage = 1;
+  },
+
+  setSearchQuery(query) {
+    this.searchQuery = query;
+    this.currentPage = 1;
+  },
+
+  setPriceRange(min, max) {
+    this.minPrice = min;
+    this.maxPrice = max;
+    this.currentPage = 1;
+  },
+
+  addToCart(product) {
+    const cartItem = this.cart.find((item) => item.id === product.id);
+    if (cartItem) {
+      cartItem.quantity += 1;
+    } else {
+      this.cart.push({ ...product, quantity: 1 });
+    }
+  },
+
+  getCartTotal() {
+    return this.cart.reduce(
+      (total, item) => total + item.price * item.quantity,
+      0
+    );
+  },
+
+  clearCart() {
+    this.cart = [];
+  },
+
+  setPage(page) {
+    this.currentPage = page;
+  },
+};
+
 fetch("https://fakestoreapi.com/products")
   .then(function (response) {
     return response.json();
@@ -184,6 +273,16 @@ async function initialize() {
   } catch (error) {
     console.error("Failed to initialize the store:", error);
   }
+}
+
+async function fetchProducts() {
+  const response = await fetch("https://fakestoreapi.com/products");
+  return response.json();
+}
+
+async function fetchCategories() {
+  const response = await fetch("https://fakestoreapi.com/products/categories");
+  return response.json();
 }
 
 initialize();
