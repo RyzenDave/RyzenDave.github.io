@@ -95,4 +95,3 @@ class Store {
     this.currentPage = page;
   }
 }
- 
